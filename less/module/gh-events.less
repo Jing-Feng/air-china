@@ -9,10 +9,34 @@
 	.box{
 		margin-right: 1em;
 	}
+	&:hover{
+		.e-desc{
+			background: @bg-color-blue;
+			color: @color-base-o;
+		}
+		.img-hover{
+			-webkit-animation:slidefromtop 200ms linear;
+			-moz-animation:slidefromtop 200ms linear;
+			-o-animation:slidefromtop 200ms linear;
+			animation:slidefromtop 200ms linear;
+			top: 0;
+		}
+	}
 	.e-img-box{
 		position: relative;
+		overflow: hidden;
 		img{
 			.img-responsive();
+		}
+		.img-hover{
+			position: absolute;
+			top: -100%;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			color: @color-base-o;
+			font-size: 0.45em;
 		}
 		.text{
 			position: absolute;
