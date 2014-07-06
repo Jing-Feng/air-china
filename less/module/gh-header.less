@@ -1,0 +1,107 @@
+.gh-header{
+	.gh-right-sidebar{
+		text-align: right;
+		a{
+			display: inline-block;
+			font-size: 0.45em;
+			margin-left: 1em;
+			line-height: 2;
+			color: @color-base;
+		}
+	}
+	.gh-menu{
+		position: relative;
+		padding-left: 15em;
+		text-indent: 0.5em;
+	}
+	.gh-main-logo{
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 9.75em;
+		height: auto;
+		img{
+			.img-responsive();
+		}
+	}
+	.gh-menu-list{
+		position: relative;
+		min-height: 4em;
+	}
+	.gh-menu-list-ul{
+		.clearfix();
+		.menu-item{
+			width: 20%;
+			padding: 1em 0 0.9em 0;
+			overflow: hidden;
+			float: left;
+/* 			&.active{
+	background: @color-one;
+	.menu-title{
+		color: @color-base-o;
+	}
+} */
+			&:hover{
+				background: @color-one;
+				.menu-title{
+					color: @color-base-o;
+				}
+			}
+		}
+		.menu-title{
+			font-size:0.65em;
+			font-weight:bolder;
+			color: @color-one;
+		}
+		.menu-desc{
+			font-size: .45em;
+			color: @color-base;
+		}
+	}
+	.menu-active-bar{
+		position: absolute;
+		width: 20%;
+		height: .15em;
+		bottom: 0;
+		left: 0;
+		background: @color-two;
+	}
+}
+
+.gh-sub-menu{
+	position: absolute;
+	background: @color-base-o;
+	width: 100%;
+	padding: 1em 0;
+	top:100%;
+	left: 0;
+	z-index: 10;
+	box-shadow: 0 -.1em .1em lighten(@color-base, 10%);
+	.clearfix();
+	.sub-item{
+		position: relative;
+		float: left;
+		width: 25%;
+		.gh-icon{
+			position: absolute;
+			top: -.3em;
+			left: 0;
+		}
+		.box{
+			margin-left:1em;
+			.title{
+				font-size: .65em;
+				font-weight: bolder;
+				color: @color-one;
+			}
+			li{
+				line-height: 1;
+			}
+			a{
+				color: @color-base;
+				font-size: .45em;
+			}
+		}
+	}
+}

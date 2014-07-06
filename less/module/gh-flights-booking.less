@@ -1,0 +1,118 @@
+.gh-flights-booking{
+	position: relative;
+	margin-top: -2.5em;
+	z-index: 10;
+	.fb-title{
+		font-size: 1.1em;
+		font-weight: bolder;
+		b{
+			color: @color-two;
+		}
+	}
+	.fb-choose{
+		.clearfix();
+		margin: 0.5em 0;
+		.fb-item{
+			float: left;
+			width: 40%;
+		}
+		.choose-box{
+			float: left;
+			width: 50%;
+			h6{
+				font-size: 0.7em;
+			}
+			.current{
+				font-size: 1.2em;
+				color: @color-three;
+				font-weight: bolder;
+			}
+		}
+		.fb-item-first{
+			float: left;
+			width: 30%;
+		}
+		.fb-item-last{
+			float: left;
+			width: 30%;
+			font-size: .7em;
+			padding-top: 1.5em;
+			.clearfix();
+			.check-box{
+				float: left;
+				margin-right: 1em;
+			}
+			.search-box{
+				position: relative;
+				top: -2em;
+				float: left;
+				background:@color-two;
+				.clearfix();
+				span{
+					display: block;
+					float: left;
+					background: inherit;
+					color: @color-base-o;
+					height: 4em;
+					width: 6em;
+					text-align: center;
+					line-height: 4em;
+				}
+				input{
+					display: block;
+					float: left;
+					background: @bg-color-black;
+					vertical-align: top;
+					padding: 0;
+					margin: 0;
+					.square(4em);
+					border: none;
+					font-size: 1em;
+				}
+				.search01{
+					position: absolute;
+					right: .8em;
+					top: 50%;
+					margin-top: -1.07em;
+				}
+			}
+		}
+	}
+	.fb-choose-icon{
+		.clearfix();
+		margin-right: -0.75em;
+		margin-top: 2em;
+	}
+	.fb-icon-choose-item{
+		float: left;
+		width:25%;
+		.box{
+			margin-right: 0.75em;
+		}
+		.icon-box{
+			background: @bg-color-blue;
+			overflow: hidden;
+			img{
+				.img-responsive();
+				margin-top: -2em;
+			}
+			h3{
+				text-align: center;
+				color: @color-base-o;
+				font-size: 1em;
+				text-shdow:0 5px 5px #ccc;
+				height: 3em;
+				overflow: hidden;
+				margin: -2em 0 0 0;
+				padding: 0 0 1em 0;
+			}
+		}
+		.desc{
+			background: @bg-color-gray;
+			opacity: 0.5;
+			color: @color-one;
+			font-size: 0.65em;
+			padding:2em;
+		}
+	}
+}

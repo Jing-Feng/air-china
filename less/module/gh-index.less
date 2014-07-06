@@ -1,0 +1,130 @@
+.gh-index-item{
+
+}
+.gh-index-title{
+	text-align: center;
+	padding: 2em 0;
+	h2{
+		font: 1em;
+		font-weight: bolder;
+	}
+	p{
+		font:.7em normal;
+	}
+}
+
+
+//fearure and content
+.gh-about-estimation{
+	width: 50%;
+	.title{
+		color: @color-three;
+		font-size: 0.8em;
+	}
+	p{
+		color: @color-three;
+		font-size: 0.65em;
+		margin: 1em 0.5em 0.5em 0;
+	}
+}
+.gh-check-status-box{
+	width: 25%;
+	.box{
+		margin-left: 2em;
+	}
+	.title{
+		font-size:.8em;
+	}
+	.textbox{
+		display: block;
+		width: 100%;
+		height:2em;
+		font-size:.6em;
+		color: @color-three;
+		border: 1px solid;
+		padding: .15em .2em;
+		margin: 1em 0 0.5em 0;
+		&:focus,&:active,&:visited{
+			box-shadow: none;
+			border: 1px solid;
+			outline: none;
+		}
+	}
+	.btn{
+		width: 6em;
+		height:2em;
+		font-size:.6em;
+		padding: .15em .2em;
+		color: @color-three;
+		background: none;
+		border: 1px solid;
+	}
+}
+
+
+//top clirnt
+.gh-top-client{
+	margin: 0 0 1.5em 0;
+	ul{
+		margin-right: -1em;
+		 li{
+		 	display: block;
+		 	float: left;
+		 	width: 16.6666%;
+		 	.box{
+		 		margin-right: 1em;
+		 	}
+		 	img{
+		 		.img-responsive();
+		 	}
+		 }
+	}
+}
+
+//index map
+.gh-index-map-item{
+	position: relative;
+}
+.gh-index-map{
+	.img-responsive();
+}
+.gh-index-map-search{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 1em;
+	.input-box{
+		position: relative;
+		width: 30%;
+		height: 2em;
+		margin: 0 auto;
+		font-size: .6em;
+		border-radius: .6em;
+		padding:0 3em;
+		background: @color-base-o;
+		color: @color-base;
+		border: 1px solid;
+		input{
+			border: none;
+			font-size: 1em;
+			width: 100%;
+			&:hover,&:active,&:visited,&:focus{
+				border: none;
+				box-shadow: none;
+				outline: none;
+			}
+		}
+		.gh-icon{
+			position: absolute;
+			top: 50%;
+			margin-top: -1.25em;
+		}
+		.red-position{
+			left: 0.5em;
+		}
+		.map-search{
+			right: 0.5em;
+		}
+	}
+}
+
