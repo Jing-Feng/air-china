@@ -1,9 +1,18 @@
 .gh-carousel{
 	img{
 		.img-responsive();
+		visibility: hidden;
 	}
 	.img-item{
 		position: relative;
+		background: no-repeat left top;
+		background-size: 100% auto;
+		&.slide-bac1{
+			background-image:url(../img/top01.jpg);
+		}
+		&.slide-bac2{
+			background-image: url(../img/top02.jpg);
+		}
 	}
 	.desc-text{
 		position: absolute;
