@@ -5,7 +5,9 @@
 	<title>中国国际航空公司</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<link rel="stylesheet" type="text/css" href="css/air-china.min.css"></head>
+	<link rel="stylesheet" type="text/css" href="css/air-china.min.css">
+	<script data-main="js/main" src="js/require.min.js"></script>
+</head>
 <body>
 	<div class="gh-header">
 		<div class="gh-wrapper">
@@ -26,13 +28,13 @@
 							</a>
 						</li>
 						<li class="menu-item">
-							<a href="#">
+							<a href="booking.html">
 								<h4 class="menu-title">BOOKING</h4>
 								<p class="menu-desc">description text</p>
 							</a>
 						</li>
 						<li class="menu-item">
-							<a href="#">
+							<a href="offers.html">
 								<h4 class="menu-title">SPECIAL</h4>
 								<p class="menu-desc">description text</p>
 							</a>
@@ -134,28 +136,32 @@
 			</div>
 		</div>
 	</div>
-	<div class="gh-carousel">
-		<ul>
-			<li class="img-item slide-bac1">
-			<img src="img/top01.jpg" alt="">
+	<div class="gh-carousel" id="gh-slider">
+		<ul data-index="1">
+			<li class="img-item slide-bac1 active">
+				<!-- <img src="img/top01.jpg" alt=""> -->
 				<div class="desc-text">
-					<div class="gh-wrapper">
+					<div class="gh-wrapper gh-clearfix">
 						<div class="gh-left">
-							<h2>WELCOME COME</h2>
-							<h2>AIR CHINA</h2>
-							<p>Enjoy your flight</p>
+							<h2 class="gh-am-left" data-order="1" >WELCOME COME</h2>
+							<h2 class="gh-am-left" data-order="2">AIR CHINA</h2>
+							<p class="gh-am-left" data-order="3">Enjoy your flight</p>
 						</div>
 					</div>
 				</div>
 			</li>
 			<li class="img-item slide-bac2 gh-hidden">
-			<img src="img/top02.jpg" alt="">
+			<!-- <img src="img/top02.jpg" alt=""> -->
 				<div class="desc-text">
-					<div class="gh-wrapper">
+					<div class="gh-wrapper gh-clearfix">
+						<span class="gh-left gh-am-left" data-order="1">
+							<img src="img/flight_top.png">
+						</span>
 						<div class="gh-right">
-							<h2>WELCOME COME</h2>
-							<h2>AIR CHINA</h2>
-							<p>Enjoy your flight</p>
+							<h2 class="gh-am-right" data-order="2">WE</h2>
+							<h2 class="gh-am-right" data-order="3">REALLY</h2>
+							<p class="gh-am-right" data-order="4">MEAN</p>
+							<p class="gh-am-right" data-order="5">BUSINESS</p>
 						</div>
 					</div>
 				</div>

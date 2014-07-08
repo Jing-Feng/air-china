@@ -1,8 +1,25 @@
 .gh-carousel{
-	img{
-		.img-responsive();
-		visibility: hidden;
+	.img-item{
+		height: 550px;
+		position: relative;
+		background: no-repeat left top;
+		background-size: 100% auto;
 	}
+	.slide-bac1{
+		background-image: url(../img/top01.jpg); 
+	}
+
+	.slide-bac2{
+		background-image: url(../img/top02.jpg); 		
+	}
+
+	.gh-am-left, .gh-am-right{
+		opacity: 0;
+	}
+
+	/* img{
+		.img-responsive();
+	} 
 	.img-item{
 		position: relative;
 		background: no-repeat left top;
@@ -13,7 +30,7 @@
 		&.slide-bac2{
 			background-image: url(../img/top02.jpg);
 		}
-	}
+	} */
 	.desc-text{
 		position: absolute;
 		width: 100%;
