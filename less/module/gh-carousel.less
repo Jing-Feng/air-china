@@ -3,6 +3,20 @@
 		position: relative;
 		background: no-repeat left top;
 		background-size: 100% auto;
+		&>img{
+			.img-responsive();
+			visibility: hidden;
+		} 
+	}
+	.img-flight{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 50%;
+		height: auto;
+		img{
+			.img-responsive();
+		}
 	}
 	.slide-bac1{
 		background-image: url(../img/top01.jpg); 
@@ -16,10 +30,6 @@
 		opacity: 0;
 	}
 
-	img{
-		.img-responsive();
-		visibility: hidden;
-	} 
 
 	.desc-text{
 		position: absolute;
