@@ -87,14 +87,33 @@
 		float: left;
 		width:25%;
 		.box{
-			margin-right: 0.75em;
+
 		}
 		.icon-box{
 			background: @bg-color-blue;
 			overflow: hidden;
+			width: 240px;
+			height: 260px;
+			transition:.5s;
+			-webkit-transtion:.5s;
+			cursor: pointer;
+			&:hover{
+				background: darken(@bg-color-blue, 20%);
+				transition:.5s;
+				-webkit-transition:.5s;
+				img{
+					width: 100%;
+					transition:.5s;
+					-webkit-transition:.5s;
+				}
+			}
 			img{
 				.img-responsive();
 				margin-top: -2em;
+				width: 90%;
+				margin: 0 auto;
+				transition:.5s;
+				-webkit-transtion:.5s;
 			}
 			h3{
 				text-align: center;
@@ -113,6 +132,8 @@
 			color: @color-one;
 			font-size: 0.65em;
 			padding:2em;
+			width: 240px;
+			box-sizing:border-box;
 		}
 	}
 }

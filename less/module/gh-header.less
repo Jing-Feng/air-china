@@ -36,14 +36,18 @@
 			padding: 1em 0 0.9em 0;
 			overflow: hidden;
 			float: left;
-/* 			&.active{
-	background: @color-one;
-	.menu-title{
-		color: @color-base-o;
-	}
-} */
+			transition:1s;
+			-webkit-transition:1s;
+			&.active{
+				background: @color-one;
+				.menu-title{
+					color: @color-base-o;
+				}
+			}
 			&:hover{
 				background: @color-one;
+				transition:1s;
+				-webkit-transition:1s;
 				.menu-title{
 					color: @color-base-o;
 				}

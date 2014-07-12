@@ -6,20 +6,27 @@
 	float: left;
 	width: 33.3333%;
 	margin: 0 0 1em 0;
+	// animation-fill-mode:both;
+	// -webkit-animation-fill-mode: both;
+	transition:.5s;
+	-webkit-transition:.5s;
 	.box{
 		margin-right: 1em;
 	}
 	&:hover{
 		.e-desc{
+			transition:1s;
+			-webkit-transition:.5s;
 			background: @bg-color-blue;
 			color: @color-base-o;
 		}
 		.img-hover{
-			-webkit-animation:slidefromtop 200ms linear;
-			-moz-animation:slidefromtop 200ms linear;
-			-o-animation:slidefromtop 200ms linear;
-			animation:slidefromtop 200ms linear;
-			top: 0;
+			-webkit-animation:fade-in-up .5s linear;
+			-moz-animation:fade-in-up .5s linear;
+			-o-animation:fade-in-up .5s linear;
+			animation:fade-in-up .5s linear;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
 		}
 	}
 	.e-img-box{
@@ -30,10 +37,13 @@
 		}
 		.img-hover{
 			position: absolute;
-			top: -100%;
+			top: 0;
 			left: 0;
+			opacity: 0;
 			height: 100%;
 			width: 100%;
+			padding: 30px 10px 0 10px;
+			border-sising:border-box;
 			background: rgba(0, 0, 0, 0.5);
 			color: @color-base-o;
 			font-size: 0.45em;
@@ -60,6 +70,8 @@
 		}
 	}
 	.e-desc{
+		transition:1s;
+		-webkit-transition:1s;
 		.title{
 			font-size: 0.9em;
 			line-height: 2em;
@@ -84,9 +96,4 @@
 		top: .8em;
 		.img-responsive();
 	}
-/* 	.flight{
-	position: absolute;
-	left: 50%;
-	margin-left: -.75em;
-} */
 }
